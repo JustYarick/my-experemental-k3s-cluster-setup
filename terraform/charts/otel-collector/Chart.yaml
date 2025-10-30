@@ -1,0 +1,23 @@
+annotations:
+  artifacthub.io/changes: |-
+    - kind: changed
+      description: Upgraded `common` chart dependency to version 4.5.2
+apiVersion: v2
+appVersion: 0.46.0
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+description: OpenTelemetry collector helm package
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/otel-collector
+icon: https://otel-collector.org/icon
+keywords:
+- otel-collector, open telemetry, tracing
+kubeVersion: '>=1.16.0-0'
+maintainers:
+- email: mike@terhar.com
+  name: mterhar
+name: otel-collector
+sources:
+- https://github.com/otel-collector/otel-collector-docker
+version: 1.2.2
